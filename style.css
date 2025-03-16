@@ -1,0 +1,181 @@
+/* Dark theme styling */
+body.dark-mode {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* Container layout */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Input & button */
+input, button {
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    background-color: #333;
+    color: #e0e0e0;
+    border: 1px solid #555;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Token table */
+#token-section {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #252525;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+#token-section h3 {
+    color: #ffcc00;
+}
+
+#token-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#token-table th, #token-table td {
+    border: 1px solid #444;
+    padding: 8px;
+    text-align: center;
+    color: #ddd;
+}
+
+#token-table th {
+    background-color: #333;
+    color: #ffcc00;
+}
+
+/* Parsing and visualization layout */
+.main-content {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.left-panel, .right-panel {
+    flex-grow: 1;
+    padding: 15px;
+    background-color: #1e1e1e;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    height: 500px;
+    overflow-y: auto;
+}
+
+/* Tree visualization styling */
+.node circle {
+    fill: #4CAF50;
+    stroke: #ffffff;
+    stroke-width: 2px;
+}
+
+.node text {
+    font-size: 14px;
+    font-family: monospace;
+    fill: #ffffff;
+}
+
+.link {
+    fill: none;
+    stroke: #00bcd4;
+    stroke-width: 2px;
+}
+/* Parsing Steps Section */
+/* #parsing-steps {
+    padding: 15px;
+    background-color: #252525;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    color: #ddd;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+#parsing-steps h3 {
+    color: #ffcc00;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+} */
+
+/* Parsing Steps Section */
+#parsing-steps {
+    padding: 15px;
+    background-color: #252525;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    color: #ddd;
+    max-height: 600px; /* Allows the box to expand properly */
+    overflow-y: auto;
+}
+
+/* Parsing Steps Header */
+#parsing-steps h3 {
+    color: #ffcc00;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Parsing step layout */
+.parsing-step {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 10px;
+    border-bottom: 1px solid #444;
+    background-color: #1e1e1e;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Align step numbers */
+.step-number {
+    font-weight: bold;
+    color: #ffcc00;
+    width: 80px;
+    text-align: left;
+    flex-shrink: 0;
+}
+
+/* Align step text */
+.step-text {
+    flex-grow: 1;
+    color: #ddd;
+}
+
+
+
+/* Style each step as a list item */
+.parsing-step {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #444;
+    background-color: #1e1e1e;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+/* Add an icon for better visibility */
+.parsing-step::before {
+    content: "📌";
+    margin-right: 8px;
+    color: #ffcc00;
+}
+
+

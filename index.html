@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Compiler Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body class="dark-mode">
+
+<div class="container">
+    <h2>🌳 Compiler Design: Interactive Tokenizer & Parse Tree</h2>
+    <p>Enter an arithmetic expression to visualize tokenization and parsing:</p>
+
+    <input id="expression" placeholder="E.g., (3 + 4) * 5">
+    <button onclick="runCompiler()">Run Compiler</button>
+
+    <!-- Tokenized Expression Table -->
+    <div id="token-section">
+        <h3>📌 Tokenized Expression</h3>
+        <table id="token-table">
+            <thead>
+                <tr>
+                    <th>Token</th>
+                    <th>Type</th>
+                    <th>Position</th>
+                </tr>
+            </thead>
+            <tbody id="token-body"></tbody>
+        </table>
+    </div>
+
+    <!-- Parsing Steps & Tree Visualization -->
+    <div class="main-content">
+        <div id="parsing-steps" class="left-panel"></div>
+        <div id="tree" class="right-panel"></div>
+    </div>
+
+    <!-- Parsing Rules Applied -->
+    <!-- <div class="rules-section">
+        <h3>📌 Parsing Rules Applied</h3>
+        <div id="parsing-rules">Enter an expression to see applied rules...</div>
+    </div> -->
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
